@@ -1,0 +1,4 @@
+.header {
+    background: linear-gradient(135deg, #FFCA41 0%, #FF9900 100%);
+    grid-area: header;
+}

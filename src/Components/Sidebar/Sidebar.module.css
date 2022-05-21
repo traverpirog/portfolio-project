@@ -1,0 +1,5 @@
+.aside {
+    background-color: #222222;
+    grid-area: sidebar;
+    height: 100vh;
+}
