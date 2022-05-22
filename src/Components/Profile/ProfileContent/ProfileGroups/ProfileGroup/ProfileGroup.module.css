@@ -1,0 +1,42 @@
+.item:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.link {
+    display: grid;
+    grid-template-areas: 'ava name' 'ava status';
+    align-items: center;
+    grid-template-columns: 1fr 4fr;
+    text-decoration: none;
+}
+
+.link img {
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #222222;
+}
+
+.avatar {
+    grid-area: ava;
+}
+
+.name {
+    margin: 0;
+    grid-area: name;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #222222;
+}
+
+.status {
+    grid-area: status;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: rgba(0,0,0,0.5);
+}
+
+.statusLink img {
+    border: 2px solid #FF9900;
+}
