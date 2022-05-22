@@ -1,0 +1,33 @@
+.block {
+    background-color: #fff;
+    grid-column: 8 span;
+    border-radius: 8px;
+    padding: 32px;
+}
+
+.list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.title {
+    margin: 0;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FF9900;
+    margin-bottom: 48px;
+}
+
+.title::after {
+    content: '';
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(./line.svg);
+    width: 26px;
+    height: 2px;
+    display: block;
+    margin-top: 4px;
+}

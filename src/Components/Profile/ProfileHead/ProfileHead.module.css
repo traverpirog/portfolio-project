@@ -1,0 +1,12 @@
+.preview {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 114px 20px 20px;
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 64px;
+}

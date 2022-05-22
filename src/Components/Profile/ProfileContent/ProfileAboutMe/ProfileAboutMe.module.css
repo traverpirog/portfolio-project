@@ -1,0 +1,57 @@
+.block {
+    grid-area: about;
+    background-color: #fff;
+    grid-column: 8 span;
+    border-radius: 8px;
+    padding: 32px;
+}
+
+.reset {
+    margin: 0;
+}
+
+.title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FF9900;
+    margin-bottom: 32px;
+}
+
+.title::after {
+    content: '';
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(./line.svg);
+    width: 26px;
+    height: 2px;
+    display: block;
+    margin-top: 4px;
+}
+
+.listReset {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+.item {
+    font-size: 18px;
+    color: #222222;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin-bottom: 16px;
+    border-bottom: 2px solid #222222;
+    padding-bottom: 4px;
+}
+
+.caption {
+    grid-column: 2 span;
+}
+
+.value {
+    color: #FF9900;
+    grid-column: 10 span;
+}
+

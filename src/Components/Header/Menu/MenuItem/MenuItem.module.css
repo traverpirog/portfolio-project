@@ -1,0 +1,14 @@
+.item {
+    margin-right: 24px;
+}
+
+.item:last-child {
+    margin-right: 0;
+}
+
+.link {
+    text-decoration: none;
+    color: #222222;
+    font-size: 16px;
+    line-height: 19px;
+}

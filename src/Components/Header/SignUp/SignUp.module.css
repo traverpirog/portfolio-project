@@ -1,0 +1,23 @@
+.reset {
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #222222;
+    padding: 11px 24px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out;
+}
+
+.btn:hover {
+    color: #ffffff;
+    background-color: #222222;
+}

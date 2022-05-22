@@ -1,0 +1,9 @@
+.block {
+    background-color: #222222;
+    border-radius: 16px;
+    padding: 24px;
+    display: grid;
+    grid-template-areas: 'about friends' 'posts groups';
+    grid-template-columns: repeat(12, 1fr);
+    gap: 24px;
+}

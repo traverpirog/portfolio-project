@@ -1,7 +1,12 @@
+body {
+  color: #222222;
+}
+
 .App-wrapper {
   display: grid;
   grid-template-areas: 'sidebar header' 'sidebar main';
   grid-template-columns: 100px 1fr;
+  grid-template-rows: 100px 1fr;
 }
 
 .App-main {

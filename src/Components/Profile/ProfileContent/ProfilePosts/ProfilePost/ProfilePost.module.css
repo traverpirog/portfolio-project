@@ -1,0 +1,90 @@
+.item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.item:last-child {
+    margin-bottom: 0;
+}
+
+.postInfo {
+    display: grid;
+    grid-template-areas: 'ava name' 'ava date';
+    column-gap: 12px;
+    row-gap: 4px;
+    grid-template-columns: 1fr 7fr;
+}
+
+.avaImg {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #FF9900;
+    grid-area: ava;
+}
+
+.name {
+    grid-area: name;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #222222;
+    align-self: end;
+}
+
+.date {
+    grid-area: date;
+    font-size: 12px;
+    line-height: 15px;
+    color: rgba(0,0,0,50%);
+    align-self: start;
+}
+
+.postMessage {
+
+}
+
+.right {
+    display: grid;
+    grid-template-areas: 'btn btn' 'like dislike';
+    grid-template-columns: 60px 60px;
+    text-align: center;
+    margin-left: auto;
+    gap: 8px;
+    box-shadow: 0 0 4px 0 rgba(0,0,0,0.2);
+    padding: 10px;
+}
+
+.btn {
+    color: #222222;
+    grid-area: btn;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: color 0.4s ease-in-out;
+}
+
+.btn:hover {
+    color: #FF9900;
+}
+
+.likeIcon {
+    color: inherit;
+    fill: currentColor;
+}
+
+.likeValue {
+    grid-area: like;
+    color: #FF9900;
+    font-weight: 500;
+}
+
+.dislikeValue {
+    grid-area: dislike;
+    color: #222222;
+}

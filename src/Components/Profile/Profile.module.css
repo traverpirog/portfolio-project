@@ -1,2 +1,6 @@
-.profile {
+.profileContainer {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding-top: 84px;
+    padding-bottom: 84px;
 }

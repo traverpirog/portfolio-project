@@ -1,0 +1,30 @@
+.link {
+    text-decoration: none;
+    display: grid;
+    grid-template-areas: 'logo name' 'logo caption';
+    column-gap: 16px;
+    align-items: center;
+}
+
+.icon {
+    width: 64px;
+    height: 64px;
+    grid-area: logo;
+}
+
+.name {
+    font-size: 24px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #222222;
+    grid-area: name;
+    margin: 0;
+}
+
+.caption {
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(34, 34, 34, 0.7);
+    grid-area: caption;
+}

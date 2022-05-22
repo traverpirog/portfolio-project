@@ -1,9 +1,9 @@
-import classes from './Button.module.css';
+import classes from './SignUp.module.css';
 
-const Button = (props) => {
+const SignUp = (props) => {
     return (
-        <button className={classes.btn}>Sign Up</button>
+        <button className={classes.btn + ' ' + classes.reset}>Sign Up</button>
     );
 };
 
-export default Button;
+export default SignUp;
