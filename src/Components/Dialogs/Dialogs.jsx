@@ -1,6 +1,7 @@
 import classes from './Dialogs.module.css';
 import DialogItem from "./DialogItem/DialogItem";
 import MessageItem from "./MessageItem/MessageItem";
+import MessageForm from "./MessageForm/MessageForm";
 
 const Dialogs = (props) => {
     return (
@@ -11,10 +12,13 @@ const Dialogs = (props) => {
                 <DialogItem name='Curly' id='3' message='Tommy, your horse ready!' image='user4.jpg'/>
                 <DialogItem name='Arthur Shelby' id='4' message='Hello, when starts season?' image='user2.jpg'/>
             </ul>
-            <ul className={classes.listMessages + ' ' + classes.list}>
-                <MessageItem name='Thomas Shelby' message="WTF, Arthur! Where's my money?" image='userDefault.jpg'/>
-                <MessageItem name='Thomas Shelby' message="Hello, when starts season?" image='user2.jpg'/>
-            </ul>
+            <div className={classes.messagesBlock}>
+                <ul className={classes.listMessages + ' ' + classes.list}>
+                    <MessageItem name='Thomas Shelby' message="WTF, Arthur! Where's my money?" image='userDefault.jpg'/>
+                    <MessageItem name='Thomas Shelby' message="Hello, when starts season?" image='user2.jpg'/>
+                </ul>
+                <MessageForm />
+            </div>
         </div>
     );
 };

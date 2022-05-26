@@ -18,6 +18,13 @@
     column-gap: 16px;
     color: #222222;
     align-items: center;
+    border-left: 2px solid transparent;
+    transition: border-left 0.4s ease-in-out, padding-left 0.4s ease-in-out;
+}
+
+.link:hover {
+    padding-left: 16px;
+    border-left: 2px solid #FF9900;
 }
 
 .image {
