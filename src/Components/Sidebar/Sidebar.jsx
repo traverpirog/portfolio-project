@@ -6,7 +6,7 @@ const Sidebar = (props) => {
     return (
         <aside className={classes.aside}>
             <Hamburger />
-            <Navbar />
+            <Navbar items={props.sidebarElements} />
         </aside>
     );
 };

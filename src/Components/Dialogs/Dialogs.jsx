@@ -7,17 +7,13 @@ const Dialogs = (props) => {
     return (
         <div className={classes.dialogs}>
             <ul className={classes.listDialogs + ' ' + classes.list}>
-                <DialogItem name='Arthur Shelby' id='1' message='Hello, when starts season?' image='user2.jpg'/>
-                <DialogItem name='Michael Shelby' id='2' message="Hello, I'm returned Home!" image='user1.jpg'/>
-                <DialogItem name='Curly' id='3' message='Tommy, your horse ready!' image='user4.jpg'/>
-                <DialogItem name='Arthur Shelby' id='4' message='Hello, when starts season?' image='user2.jpg'/>
+                { props.dialogs.map((d, index) => <DialogItem key={index} name={d.name} id={d.id} message={d.message} image={d.image}/>) }
             </ul>
             <div className={classes.messagesBlock}>
                 <ul className={classes.listMessages + ' ' + classes.list}>
-                    <MessageItem name='Thomas Shelby' message="WTF, Arthur! Where's my money?" image='userDefault.jpg'/>
-                    <MessageItem name='Thomas Shelby' message="Hello, when starts season?" image='user2.jpg'/>
+                    { props.messages.map((m, index) => <MessageItem key={index} name={m.name} message={m.message} image={m.image}/>) }
                 </ul>
-                <MessageForm />
+                <MessageForm/>
             </div>
         </div>
     );

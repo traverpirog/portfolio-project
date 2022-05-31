@@ -5,11 +5,16 @@ import ProfileGroups from "./ProfileGroups/ProfileGroups";
 import ProfilePosts from "./ProfilePosts/ProfilePosts";
 
 const ProfileContent = (props) => {
+
+    let myProfileData = [
+        {website: 'https://peakyblinders.tv/', phone: '+1 (111) 111-11-11', name: 'Thomas Shelby', email: 'thomas-shelby@gmail.com', address: 'Grace st., 2-18, Birmingham'}
+    ]
+
     return (
         <div className={classes.block}>
-            <ProfileAboutMe website='https://peakyblinders.tv/' name='Thomas Shelby' phone='+1 (111) 111-11-11' email='thomas-shelby@gmail.com' address='Grace st., 2-18, Birmingham'/>
+            <ProfileAboutMe website={myProfileData[0].website} name={myProfileData[0].name} phone={myProfileData[0].phone} email={myProfileData[0].email} address={myProfileData[0].address}/>
             <ProfileFriends />
-            <ProfilePosts />
+            <ProfilePosts updatePost={props.updatePost} addPost={props.addPost} posts={props.posts} newPostText={props.newPostText}/>
             <ProfileGroups />
         </div>
     );

@@ -3,6 +3,7 @@
     grid-template-columns: 1fr 1fr;
     padding: 64px;
     gap: 64px;
+    max-height: 600px;
 }
 
 .list {
@@ -13,12 +14,17 @@
 
 .messagesBlock {
     position: relative;
+    max-height: 600px;
+    padding-bottom: 90px;
+    overflow: scroll;
 }
 
 .listMessages {
-
+    height: 100%;
+    overflow-y: scroll;
 }
 
 .listDialogs {
-
+    max-height: 740px;
+    overflow-y: scroll;
 }

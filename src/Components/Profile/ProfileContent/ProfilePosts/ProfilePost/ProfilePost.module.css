@@ -48,19 +48,13 @@
 }
 
 .right {
-    display: grid;
-    grid-template-areas: 'btn btn' 'like dislike';
-    grid-template-columns: 60px 60px;
     text-align: center;
     margin-left: auto;
-    gap: 8px;
-    box-shadow: 0 0 4px 0 rgba(0,0,0,0.2);
     padding: 10px;
 }
 
 .btn {
     color: #222222;
-    grid-area: btn;
     padding: 0;
     margin: 0;
     border: none;
@@ -79,12 +73,13 @@
 }
 
 .likeValue {
-    grid-area: like;
     color: #FF9900;
     font-weight: 500;
 }
 
-.dislikeValue {
-    grid-area: dislike;
-    color: #222222;
+.likeBlock {
+    display: grid;
+    grid-template-columns: 30px 40px;
+    align-items: center;
+    gap: 8px;
 }

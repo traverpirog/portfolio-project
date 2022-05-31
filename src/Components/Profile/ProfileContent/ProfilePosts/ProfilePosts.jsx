@@ -1,13 +1,23 @@
 import classes from './ProfilePosts.module.css';
 import ProfilePost from "./ProfilePost/ProfilePost";
+import ProfileForm from "./ProfileForm/ProfileForm";
 
 const ProfilePosts = (props) => {
+
+    let fixLikes = (count) => {
+        return count > 999 ? Math.floor(count / 1000) + 'k' : count;
+    }
+
+    let posts = props.posts.map(p => (<ProfilePost key={p.id} image={p.image} likes={fixLikes( p.likes )} name={p.name} message={p.message} date={p.date}/>));
+
     return (
         <div className={classes.block}>
             <h2 className={classes.title}>Posts</h2>
+            <ProfileForm updatePost={props.updatePost} addPost={props.addPost} newPostText={props.newPostText} />
             <ul className={classes.list}>
-                <ProfilePost path='userDefault.jpg' likes='112' dislikes='2' name='Thomas Shelby' message='New season! Wait soon...' date='21 may 2022'/>
-                <ProfilePost path='userDefault.jpg' likes='123213' dislikes='123' name='Thomas Shelby' message='End of the season... I will miss you!' date='16 january 2022'/>
+                {
+                    posts
+                }
             </ul>
         </div>
     );
